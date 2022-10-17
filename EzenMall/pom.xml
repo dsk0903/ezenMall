@@ -14,7 +14,7 @@
 		<org.slf4j-version>1.6.6</org.slf4j-version>
 	</properties>
 
-  
+
 	<dependencies>
 		<!-- Spring -->
 		<dependency>
@@ -28,6 +28,12 @@
 					<artifactId>commons-logging</artifactId>
 				 </exclusion>
 			</exclusions>
+		</dependency>
+		
+		<!-- lombook 코드 자동 완성 -->
+		<dependency>
+			<groupId>org.projectlombok</groupId> <artifactId>lombok</artifactId>
+			<version>1.18.12</version> <scope>provided</scope>
 		</dependency>
 		
 		<!-- jquery -->
