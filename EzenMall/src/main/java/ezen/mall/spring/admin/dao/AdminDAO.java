@@ -12,7 +12,13 @@ public class AdminDAO {
 	@Autowired
 	SqlSessionTemplate sqlSessionTemplate;
 	
-	public List<AdminDTO> selectAll(){
-		return sqlSessionTemplate.selectList("selectAll");
+	public List<AdminDTO> memberSelectAll(){
+		return sqlSessionTemplate.selectList("memberSelectAll");
 	}
+	
+	public List<AdminDTO> productSelectAll(){
+		return sqlSessionTemplate.selectList("productSelectAll");
+	}
+	
+	
 }

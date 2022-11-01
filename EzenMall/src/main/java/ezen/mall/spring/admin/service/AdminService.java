@@ -13,7 +13,11 @@ public class AdminService {
 	@Autowired
 	private AdminDAO adminDAO;
 	
-	public List<AdminDTO> adminSelectAll(){
-		return adminDAO.selectAll();
+	public List<AdminDTO> adminMemberSelectAll(){
+		return adminDAO.memberSelectAll();
+	}
+	
+	public List<AdminDTO> adminProductSelectAll(){
+		return adminDAO.productSelectAll();
 	}
 }

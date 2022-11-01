@@ -17,11 +17,27 @@ public class AdminController {
 	@Autowired
 	private AdminService adminService;
 	
-	@RequestMapping(value = "/AdminSelect", method = RequestMethod.GET)
-	public String list(Model model) {
-		model.addAttribute("list", adminService.adminSelectAll());
+	// main test
+	@RequestMapping(value = "/AdminMain", method = RequestMethod.GET)
+	public String main() {
+		return "/admin/admin_main_view";
+	}
+	
+	// 사용자 전체 조회
+	@RequestMapping(value = "/AdminMemberSelect", method = RequestMethod.GET)
+	public String memberList(Model model) {
+		model.addAttribute("list", adminService.adminMemberSelectAll());
 		logger.info("list", model);
 		System.out.println("1111111" + model);
-		return "./admin/admin_select_all_view";
+		return "./admin/admin_member_select_view";
+	}
+	
+	// 상품 전체 조회
+	@RequestMapping(value = "/AdminProductSelect", method = RequestMethod.GET)
+	public String productList(Model modell) {
+		modell.addAttribute("list", adminService.adminProductSelectAll());
+		logger.info("list", modell);
+		System.out.println("1111111" + modell);
+		return "./admin/admin_product_select_view";
 	}
 }
