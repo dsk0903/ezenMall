@@ -5,10 +5,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import ezen.mall.spring.product.dto.ProductDTO;
-
-@Repository
+//
+//@Repository
 
 public class ProductDAO {
-	@Autowired
-	SqlSessionTemplate sqlsessionTemplate;
+//	@Autowired
+//	SqlSessionTemplate sqlsessionTemplate;
 }
