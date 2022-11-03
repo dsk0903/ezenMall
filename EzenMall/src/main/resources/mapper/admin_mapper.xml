@@ -2,11 +2,16 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="ezen.mall.spring.admin">
 	<select id="memberSelectAll" resultType="AdminDTO">
-		select member_id, member_pwd, member_name from member
+		select 
+		member_id, member_pwd, member_name, member_email, member_nickname, member_profile,
+		member_check, member_role, member_grade, member_phone, member_date
+		from member
 	</select>
 	
 	<select id="productSelectAll" resultType="AdminDTO">
-		select product_number, category_code, product_name, product_price, product_stock, 
-		product_desc, product_date, product_hits from product
+		select 
+		product_number, category_code, product_name, product_price, product_stock, 
+		product_desc, product_date, product_hits 
+		from product
 	</select>
 </mapper>
