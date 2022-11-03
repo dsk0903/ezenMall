@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ezen.mall.spring.servicecenter">
+
+	<select id="serviceSelectAll" resultType="ServiceCenterDTO">
+		select 
+		board_number, board_content, board_title, to_char(board_date,'yyyy-mm-dd')
+		from board_notice
+	</select>
+</mapper>

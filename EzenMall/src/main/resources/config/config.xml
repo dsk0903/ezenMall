@@ -3,5 +3,6 @@
 <configuration>
 	<typeAliases>
 		<typeAlias alias="AdminDTO" type="ezen.mall.spring.admin.dto.AdminDTO" />
+		<typeAlias alias="ServiceCenterDTO" type="ezen.mall.spring.servicecenter.dto.ServiceCenterDTO"/>
 	</typeAliases>
 </configuration>
