@@ -61,19 +61,19 @@
 				id="sidenavAccordion">
 				<div class="sb-sidenav-menu">
 					<div class="nav">
-						<div class="sb-sidenav-menu-heading">Core</div>
-						<a class="nav-link" href="index.html">
+						<div class="sb-sidenav-menu-heading">Main</div>
+						<a class="nav-link" href="./AdminMain">
 							<div class="sb-nav-link-icon">
 								<i class="fas fa-tachometer-alt"></i>
-							</div> Dashboard
+							</div> Main
 						</a>
-						<div class="sb-sidenav-menu-heading">Interface</div>
+						<div class="sb-sidenav-menu-heading"> 관리 </div>
 						<a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
 							data-bs-target="#collapseLayouts" aria-expanded="false"
 							aria-controls="collapseLayouts">
 							<div class="sb-nav-link-icon">
 								<i class="fas fa-columns"></i>
-							</div> Layouts
+							</div> 관리
 							<div class="sb-sidenav-collapse-arrow">
 								<i class="fas fa-angle-down"></i>
 							</div>
@@ -81,9 +81,8 @@
 						<div class="collapse" id="collapseLayouts"
 							aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
 							<nav class="sb-sidenav-menu-nested nav">
-								<a class="nav-link" href="layout-static.html">Static
-									Navigation</a> <a class="nav-link" href="layout-sidenav-light.html">Light
-									Sidenav</a>
+								<a class="nav-link" href="./AdminMemberSelect"> 회원 관리 </a> 
+								<a class="nav-link" href="./AdminProductSelect"> 상품 관리 </a>
 							</nav>
 						</div>
 						<a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
@@ -157,7 +156,7 @@
 				<div class="container-fluid px-4">
 					<h1 class="mt-4">상품관리</h1>
 					<ol class="breadcrumb mb-4">
-						<li class="breadcrumb-item"><a href="./AdminMain"> 메인 </a></li>
+						<li class="breadcrumb-item"><a href="./AdminMain"> Main </a></li>
 					</ol>
 					<div class="card mb-4">
 						<div class="card-header">
@@ -193,13 +192,13 @@
 									<c:forEach var="list" items="${list}">
 										<tr>
 											<td>${list.product_number}</td>
-											<td></td>
+											<td>${list.category_code}</td>
 											<td>${list.product_name}</td>
 											<td>${list.product_price}</td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
+											<td>${list.product_stock}</td>
+											<td>${list.product_desc}</td>
+											<td>${list.product_date}</td>
+											<td>${list.product_hits}</td>
 										</tr>
 									</c:forEach>
 								</tbody>

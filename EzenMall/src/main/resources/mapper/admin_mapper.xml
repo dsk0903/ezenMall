@@ -6,6 +6,7 @@
 	</select>
 	
 	<select id="productSelectAll" resultType="AdminDTO">
-		select product_number, product_name, product_price from product
+		select product_number, category_code, product_name, product_price, product_stock, 
+		product_desc, product_date, product_hits from product
 	</select>
 </mapper>

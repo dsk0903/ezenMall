@@ -28,33 +28,11 @@
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 		
 	<servlet-mapping>
         <servlet-name>appServlet</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
-=======
-<<<<<<< HEAD
-	
-	<servlet-mapping>
-		<servlet-name>appServlet</servlet-name>
-		<url-pattern>/</url-pattern>
-	</servlet-mapping>
-=======
->>>>>>> refs/remotes/origin/main
-		
-	<servlet-mapping>
-        <servlet-name>appServlet</servlet-name>
-        <url-pattern>/</url-pattern>
-    </servlet-mapping>
-<<<<<<< HEAD
-=======
->>>>>>> refs/remotes/origin/main
->>>>>>> refs/remotes/origin/main
->>>>>>> refs/remotes/origin/main
 
 	<filter>
 		<filter-name>encodingFilter</filter-name>
