@@ -164,47 +164,50 @@
 								<thead>
 									<tr>
 										<th>아이디</th>
-										<th>비밀번호</th>
+							<!--  		<th>비밀번호</th> -->
 										<th>이름</th>
 										<th>이메일</th>
 										<th>닉네임</th>
-										<th>프로필 사진</th>
-										<th>이메일 수신 여부</th>
-										<th>유저 권한</th>
+							<!--		<th>프로필 사진</th> -->
+							<!--		<th>이메일 수신 여부</th>	-->
+							<!--		<th>유저 권한</th>	-->
 										<th>등급</th>
 										<th>전화번호</th>
 										<th>가입 날짜</th>
+										<th>상세 정보</th>
 									</tr>
 								</thead>
 								<tfoot>
 									<tr>
 										<th>아이디</th>
-										<th>비밀번호</th>
+							<!--  		<th>비밀번호</th> -->
 										<th>이름</th>
 										<th>이메일</th>
 										<th>닉네임</th>
-										<th>프로필 사진</th>
-										<th>이메일 수신 여부</th>
-										<th>유저 권한</th>
+							<!--		<th>프로필 사진</th> -->
+							<!--  		<th>이메일 수신 여부</th> -->
+							<!--		<th>유저 권한</th>	-->
 										<th>등급</th>
 										<th>전화번호</th>
 										<th>가입 날짜</th>
+										<th>수정</th>
 									</tr>
 								</tfoot>
 								<tbody>
 									<c:forEach var="list" items="${list}">
 										<tr>
 											<td>${list.member_id}</td>
-											<td>${list.member_pwd}</td>
+							<!--			<td>${list.member_pwd}</td> -->
 											<td>${list.member_name}</td>
 											<td>${list.member_email}</td>
 											<td>${list.member_nickname}</td>
-											<td>${list.member_profile}</td>
-											<td>${list.member_check}</td>
-											<td>${list.member_role}</td>
+							<!--  			<td>${list.member_profile}</td> -->
+							<!--			<td>${list.member_check}</td>	-->
+							<!--			<td>${list.member_role}</td>	-->
 											<td>${list.member_grade}</td>
 											<td>${list.member_phone}</td>
 											<td>${list.member_date}</td>
+											<td><button type="button" class="btn btn-info" onclick="location.href='./AdminMemberSelectDetail?member_id=${list.member_id}'">상세 정보</button></td>
 										</tr>
 									</c:forEach>
 								</tbody>

@@ -2,6 +2,7 @@
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<typeAliases>
-		<typeAlias alias="AdminDTO" type="ezen.mall.spring.admin.dto.AdminDTO" />
+		<typeAlias alias="AdminMemberDTO" type="ezen.mall.spring.admin.dto.AdminMemberDTO" />
+		<typeAlias alias="AdminProductDTO" type="ezen.mall.spring.admin.dto.AdminProductDTO" />
 	</typeAliases>
 </configuration>
