@@ -22,6 +22,10 @@
 		product_desc, product_date, product_hits 
 		from product
 	</select>
+<<<<<<< HEAD
 	
 	
 </mapper>
+=======
+</mapper> 
+>>>>>>> refs/remotes/origin/main

@@ -214,7 +214,7 @@
 													check = "수신 불가능";
 												}
 												//	alert(check);
-												$('input[id=member_check]').attr('value',check); */ 
+												$('input[id=member_check]').attr('value',check); */
 											</script>
                                             <div class="row mb-3">
                                                 <div class="col-md-6">
