@@ -7,8 +7,8 @@ import lombok.Setter;
 import lombok.ToString;
 
 @Component
-@Setter
 @Getter
+@Setter
 @ToString
 
 public class ProductDTO {
