@@ -3,5 +3,9 @@
 <configuration>
 	<typeAliases>
 		<typeAlias alias="ProductDTO" type="ezen.mall.spring.product.dto.ProductDTO"/>
+		<typeAlias alias="AdminMemberDTO" type="ezen.mall.spring.admin.dto.AdminMemberDTO" />
+		<typeAlias alias="AdminProductDTO" type="ezen.mall.spring.admin.dto.AdminProductDTO" />
+		<typeAlias alias="AdminDTO" type="ezen.mall.spring.admin.dto.AdminDTO" />
+		<typeAlias alias="ServiceCenterDTO" type="ezen.mall.spring.servicecenter.dto.ServiceCenterDTO"/>
 	</typeAliases>
 </configuration>

@@ -5,7 +5,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import ezen.mall.spring.admin.dto.AdminDTO;
 import ezen.mall.spring.product.dao.ProductDAO;
 import ezen.mall.spring.product.dto.ProductDTO;
 

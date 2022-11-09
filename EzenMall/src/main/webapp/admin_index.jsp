@@ -11,4 +11,5 @@
 		location.href="./AdminMain";
 	</script>
 </body>
+
 </html>

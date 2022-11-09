@@ -30,6 +30,4 @@
 	<context:component-scan base-package="ezen.mall.spring" />
 	<context:component-scan base-package="ezen.spring" />
 	
-	
-	
 </beans:beans>
